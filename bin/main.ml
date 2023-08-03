@@ -16,7 +16,7 @@ let find_str s search =
 
 let () =
   Lwt_main.run
-    (let url = "https://www.bbc.com/zhongwen/simp/chinese-news-66371405" in
+    (let url = "" in
      let%lwt body = getBody url in
      let soup = body |> parse in
      let content = Soup.(soup $ "main") in
