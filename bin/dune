@@ -1,0 +1,6 @@
+(executable
+ (public_name scrap)
+ (name main)
+ (libraries str scrap lambdasoup markup-lwt lwt cohttp-lwt-unix conduit-lwt)
+ (preprocess
+  (pps lwt_ppx)))
